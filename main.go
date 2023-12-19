@@ -72,7 +72,7 @@ func main() {
 	btfSpec, err = btf.LoadKernelSpec()
 	if err != nil {
 		btfFileName := "5.8.0-63-generic_min.btf"
-		btfFileReader, err := btfs.BfFiles.ReadFile(btfFileName)
+		btfFileReader, err := btfs.BtfFiles.ReadFile(btfFileName)
 		if err != nil {
 			log.Fatalf("reading %v BTF file %v", btfFileReader, err)
 		}
